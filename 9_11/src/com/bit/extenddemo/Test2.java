@@ -46,6 +46,7 @@ class Cat1 extends Animal1{
 }
 
 public class Test2 {
+    protected int size = 10;
     public static void main(String[] args) {
         Cat1 cat1 = new Cat1("haha");
         cat1.eat();
