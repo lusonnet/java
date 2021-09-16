@@ -16,5 +16,19 @@ public class BookList {
         this.books[2] = new Book("红楼梦","曹雪芹",29,"小说");
     }
 
+    public int getUsedSize() {
+        return usedSize;
+    }
 
+    public void setUsedSize(int usedSize) {
+        this.usedSize = usedSize;
+    }
+
+    public Book getPos(int i){
+        return books[i];
+    }
+
+    public void setBooks(int pos,Book book){
+        books[pos] = book;
+    }
 }

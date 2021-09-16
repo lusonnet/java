@@ -11,6 +11,6 @@ import book.BookList;
  */
 public class Return implements IOPeration{
     public void work(BookList bookList){
-
+        System.out.println("归还图书");
     }
 }

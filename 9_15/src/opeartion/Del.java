@@ -12,6 +12,6 @@ import book.BookList;
 public class Del implements IOPeration{
     @Override
     public void work(BookList bookList){
-
+        System.out.println("删除图书");
     }
 }

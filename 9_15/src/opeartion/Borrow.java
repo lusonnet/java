@@ -12,6 +12,6 @@ import book.BookList;
 public class Borrow implements IOPeration{
     @Override
     public void work(BookList bookList){
-
+        System.out.println("借阅图书");
     }
 }
