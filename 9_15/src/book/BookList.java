@@ -14,6 +14,7 @@ public class BookList {
         this.books[0] = new Book("三国演义","罗贯中",19,"小说");
         this.books[1] = new Book("水浒传","施耐庵",32,"小说");
         this.books[2] = new Book("红楼梦","曹雪芹",29,"小说");
+        this.usedSize = 3;
     }
 
     public int getUsedSize() {
@@ -31,4 +32,5 @@ public class BookList {
     public void setBooks(int pos,Book book){
         books[pos] = book;
     }
+
 }
