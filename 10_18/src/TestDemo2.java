@@ -12,7 +12,7 @@ public class TestDemo2 {
     int usedSize = 0;
 
     //向上调整
-    private void shiftUp(int child) {
+    /*private void shiftUp(int child) {
         int parent = (child-1) / 2;
         while (parent >= 0) {
             if (this.elem[parent] < this.elem[child]) {
@@ -84,7 +84,7 @@ public class TestDemo2 {
             ret[i] = queue.poll();
         }
         return ret;
-    }
+    }*/
     public static void main(String[] args) {
 
     }
