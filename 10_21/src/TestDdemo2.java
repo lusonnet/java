@@ -50,8 +50,28 @@ public class TestDdemo2 {
         merge(array,left,right,mid);//合并
     }
 
+    public static void merge2(int[] array,int gap){
+        int[] tmp = new int[array.length];
+        int k = 0;
+        int s1 = 0;
+        int e1 = s1+gap-1;
+        int s2 = e1+1;
+        int e2 = s2+gap-1 >= array.length?array.length-1:s2+gap-1;
+        while(s2< array.length){//一定有两个段
+            while(s1<=e1&&s2<=e2){
+                if(array[s1]<=array[s2]){
+
+                }
+            }
+        }
+        while(s1<=e1){
+            tmp[k++]= array[s1++];
+
+        }
+    }
     public static void mergeSort(int[] array){
-        mergeSortInternal(array,0, array.length-1);
+        // mergeSortInternal(array,0, array.length-1);
+
     }
 
     public static int[] mergeArray(int[] array1,int[] array2){
