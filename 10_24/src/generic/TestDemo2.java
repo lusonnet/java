@@ -7,7 +7,7 @@ package generic;
  * Date: 2021-10-24
  * Time: 14:45
  */
-//实现一个泛型类
+//泛型类
 class Algorithm <T extends Comparable<T>>{
     public T findMax(T[] array){
         T max = array[0];
@@ -19,6 +19,23 @@ class Algorithm <T extends Comparable<T>>{
         return max;
     }
 }
+
+class Algorithm2{
+    //泛型方法
+    public static<T extends Comparable<T>> T findMax(T[] array){
+        T max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if(max.compareTo(array[i]) < 0){
+                max = array[i];
+            }
+        }
+        return max;
+    }
+}
+
+/*public static void printAll(MyArrayList<? super Integer>list){
+
+}*/
 
 public class TestDemo2 {
     public static void main(String[] args) {
