@@ -13,7 +13,7 @@ public class Book {
     private String author;
     private int price;
     private String type;
-    private int isBorrowed;
+    private boolean isBorrowed;
 
     public int getBookId() {
         return bookId;
@@ -55,11 +55,11 @@ public class Book {
         this.type = type;
     }
 
-    public int getIsBorrowed() {
+    public boolean isBorrowed() {
         return isBorrowed;
     }
 
-    public void setIsBorrowed(int isBorrowed) {
-        this.isBorrowed = isBorrowed;
+    public void setBorrowed(boolean borrowed) {
+        isBorrowed = borrowed;
     }
 }
