@@ -7,7 +7,8 @@ package bookManager;
  * Date: 2021-11-30
  * Time: 21:50
  */
-public class User {
+//抽象类可以避免被实例化
+abstract public class User {
     private int userId;
     private String name;
     private String password;

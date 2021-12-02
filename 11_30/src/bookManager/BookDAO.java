@@ -17,7 +17,7 @@ import java.util.List;
  * Time: 23:29
  */
 public class BookDAO {
-    public static void add(Book book){
+    public  void add(Book book){
         Connection connection = null;
         PreparedStatement statement = null;
         try{
@@ -262,7 +262,15 @@ public class BookDAO {
             }
         }
         return false;
+    }
 
-
+    public static void main(String[] args) {
+        BookDAO bookDAO = new BookDAO();
+        Book book = new Book();
+        book.setName("红楼梦");
+        book.setAuthor("曹雪芹");
+        book.setType("古典小说");
+        book.setPrice(1000);
+        bookDAO.add(book);
     }
 }

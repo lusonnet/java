@@ -7,6 +7,6 @@ package bookManager;
  * Date: 2021-11-30
  * Time: 22:06
  */
-public class Admin {
+public class Admin extends User{
 
 }
