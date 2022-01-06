@@ -27,7 +27,7 @@ public class SchoolNav {
         int end = 0;
         while(true){
             System.out.println("=========欢迎使用西安邮电大学校园导游系统==============");
-            System.out.println("             1.查询所有地点");
+            System.out.println("             1.查看所有地点");
             System.out.println("             2.输入地点名称查询信息");
             System.out.println("             3.查询两点所有路径");
             System.out.println("             4.查询两点最短路径");
@@ -53,7 +53,7 @@ public class SchoolNav {
                     String from = scanner.next();
                     System.out.println("请输入终点");
                     String to = scanner.next();
-                    start = convert(graphMartix,from);//此函数名称转ID
+                    start = convert(graphMartix,from);//此函数名称转ID编号
                     end = convert(graphMartix,to);
                     pclr.Dijkstra(graphMartix,start,end);
 
@@ -63,14 +63,38 @@ public class SchoolNav {
         }
     }
     public static void getAllPosition(GraphMartix graphMartix){
-        System.out.println("所有地点的信息如下：");
-        for (int i = 0; i < graphMartix.vex.size(); i++) {
-            Position temp = graphMartix.vex.get(i);
-            System.out.println("ID: " + temp.getId());
-            System.out.println("名称: " + temp.getName());
-            System.out.println("介绍: " + temp.getIntro());
-        }
-        return;
+        System.out.println("|------------------------------------------------------------------------------------------------|");
+        System.out.println("|                                 西安邮电大学校园地点一览                                     |");
+        System.out.println("|------------------------------------------------------------------------------------------------|");
+        System.out.println("|                                                                                                |");
+        System.out.println("|                   西区正门                                                                     |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                      |                                   东区正门==================逸夫楼      |");
+        System.out.println("|                      |                                                     |         |         |");
+        System.out.println("|            |===水煮鸽子                                                    |         |         |");
+        System.out.println("|            |         |                                                     |         |         |");
+        System.out.println("|           基础       |                                                     |      安美公寓     |");
+        System.out.println("|          教学楼      |                                                     |         |         |");
+        System.out.println("|            |         |                                                     |         |         |");
+        System.out.println("|            |         |                                                     |      安悦公寓     |");
+        System.out.println("|            |         |                                          东升苑 ====|                   |");
+        System.out.println("|            |         |                                                     |                   |");
+        System.out.println("|            |       图书馆                                                  |                   |");
+        System.out.println("|       教学实验楼     |                                                     |                   |");
+        System.out.println("|            |         |=====================================================|                   |");
+        System.out.println("|            |         |                 |||   西邮桥   |||                  |                   |");
+        System.out.println("|  医务室====|         |=====================================================|                   |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                      |===体育馆                                                                |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                    旭日苑                                                                      |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                      |                                                                         |");
+        System.out.println("|                  西区宿舍楼          	                                                         |");
+        System.out.println("|                                                                                                |");
+        System.out.println("|------------------------------------------------------------------------------------------------|");
     }
 
     public static void getInfo(GraphMartix graphMartix){

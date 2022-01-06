@@ -13,9 +13,9 @@ import java.util.List;
  * Time: 11:18
  */
 public class GraphMartix {
-    public List<Position> vex;//两点权值
-    public int[][] arcs;
-    public int NodeCount;
+    public List<Position> vex;//定义顶点
+    public int[][] arcs;//存取权值
+    public int NodeCount;//点个数
     public GraphMartix(List<Position> positions){
         int nodeCount = positions.size();
         NodeCount = nodeCount;
